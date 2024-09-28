@@ -4,23 +4,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'GeshinFont'; /* Define a name for your font */
+    src: url('fonts/Genshinfont.ttf') format('truetype');
+    font-weight: normal; /* Adjust as needed */
+    font-style: normal; /* Adjust as needed */
+}
+@font-face {
+    font-family: 'GeshinFont2'; /* Define a name for your font */
+    src: url('fonts/zh-cn.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cairo'; /* Define a name for your font */
+    src: url('fonts/Cairo-Regular.ttf') format('truetype');
+}
+
+
 body {
-    background-color: rgb(215, 231, 250);
+    background-image: url('media/arlebg.png'); /* Ensure the path is correct */
+    background-size: cover;
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+    background-color: rgb(215, 231, 250); /* Fallback color */
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    min-height: 100vh; /* Ensures minimum height for very short content pages */
+    font-family: 'GeshinFont2';
 }
+@media only screen and (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Changes background attachment for better support on mobile */
+    }
+}
+
 header {
     border-bottom: 1px solid black;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center ;
-    background-color: rgb(239, 242, 246);
-    
+    align-items: center;
+    background-color: rgba(34, 2, 2, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
 }
+
 .logoHeader {
 color: black;
 margin-top: 10px;
@@ -31,8 +62,9 @@ margin-bottom: 10px;
 .logoHeader a {
     font-size: 50px;
     text-align: center;
-    color: rgb(3, 83, 169);
+    color: rgb(169, 3, 3);
     text-decoration: none;
+    font-family: 'GeshinFont';
     
 }
 .myaccount img{
@@ -48,13 +80,31 @@ margin-right: 20px;
     margin-top: 20px;
     height: auto;
     width: 80%;
-    background-color: rgb(196, 217, 255);
+    background-color: rgba(255, 255, 255, 0.48); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurry transparent effect */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Adds spacing inside the container */
+    box-sizing: border-box; /* Includes padding and border in the width and height */
+}
+@media (max-width: 720px) {
+    .content {
+        width: 95%; /* Allows more width on smaller screens */
+        padding: 10px; /* Less padding to maximize space utilization */
+    }
+}
+#arabic {
+    font-family: 'Cairo';
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 40px;
+
 }
 p { 
-    font-size: 20px;
+    font-size: 26px;
     text-align: center;
+    margin-bottom: 20px;
 }
 .text {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 30px;
 }
