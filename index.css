@@ -1,37 +1,44 @@
 * {
-    
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'GeshinFont'; /* Define a name for your font */
+    font-family: 'GeshinFont';
+    /* Define a name for your font */
     src: url('fonts/Genshinfont.ttf') format('truetype');
-    font-weight: normal; /* Adjust as needed */
-    font-style: normal; /* Adjust as needed */
+    font-weight: normal;
+    /* Adjust as needed */
+    font-style: normal;
+    /* Adjust as needed */
 }
+
 @font-face {
-    font-family: 'GeshinFont2'; /* Define a name for your font */
+    font-family: 'GeshinFont2';
+    /* Define a name for your font */
     src: url('fonts/zh-cn.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'Cairo'; /* Define a name for your font */
+    font-family: 'Cairo';
+    /* Define a name for your font */
     src: url('fonts/Cairo-Regular.ttf') format('truetype');
 }
 
 
 body {
-    background-image: url('media/arlebg.png'); /* Ensure the path is correct */
+    background-image: url('media/arlebg.png');
     background-size: cover;
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents repeating the image */
-    background-attachment: fixed; /* Keeps the image fixed during scrolling */
-    background-color: rgb(229, 167, 167); /* Fallback color */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(185, 109, 109);
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; /* Ensures minimum height for very short content pages */
+    min-height: 100vh;
     font-family: 'GeshinFont2';
 }
 
@@ -44,81 +51,119 @@ header {
     align-items: center;
     background-color: rgba(34, 2, 2, 0.2);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
 }
-
+.header-content {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .logoHeader {
-color: black;
-margin-top: 10px;
-margin-bottom: 10px;
+    
+    margin: 0 20px 0 20px;
 
 
 }
+
 .logoHeader a {
     font-size: 50px;
     text-align: center;
     color: rgb(169, 3, 3);
     text-decoration: none;
     font-family: 'GeshinFont';
-    
-}
-.myaccount img{
-width: 30px;
-
-margin-top: 10px;
-margin-left: 20px;
-margin-bottom: 10px;
-margin-right: 20px;
 
 }
-.content { 
+
+.myaccount img {
+    width: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.myaccount {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.myaccount p {
+    color: rgb(169, 3, 3);
+    font-size: 15px;
+}
+.myaccount a {
+    font-size: 30px;
+text-decoration: none;
+color: rgb(169, 3, 3);
+}
+
+.content {
     margin-top: 20px;
     height: auto;
     width: 80%;
-    background-color: rgba(255, 255, 255, 0.48); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Blurry transparent effect */
-    border-radius: 20px; /* Rounded corners */
-    padding: 20px; /* Adds spacing inside the container */
-    box-sizing: border-box; /* Includes padding and border in the width and height */
+    background-color: rgba(255, 255, 255, 0.48);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
 @media (max-width: 720px) {
     .content {
-        width: 95%; /* Allows more width on smaller screens */
-        padding: 10px; /* Less padding to maximize space utilization */
+        width: 95%;
+        padding: 10px;
     }
 }
+
 #arabic {
     font-family: 'Cairo';
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 40px;
 
 }
-.text p { 
+
+.text p {
     font-size: 26px;
     text-align: center;
     margin-bottom: 20px;
 }
+
 .text {
     margin-top: 10px;
     padding: 30px;
 }
+
 .images {
     display: flex;
     flex-flow: row nowrap;
-justify-content: flex-end;
+    justify-content: flex-end;
 
 }
+
 .img {
     width: 100px;
-    margin: 0 20px 0 20px;
+
 }
+
+.tandi {
+    margin: 0 10px 0 10px;
+}
+
+.x {
+    filter: brightness(0) saturate(100%)
+        /* Make the image completely black and white */
+        invert(23%) sepia(100%)
+        /* Apply a red tint */
+        saturate(10000%) hue-rotate(30deg) brightness(0.8);
+}
+
 #arrow {
     display: flex;
     flex-flow: column;
     align-items: center;
 }
+
 #arrow p {
     position: absolute;
-    
+
 }
