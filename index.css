@@ -27,7 +27,7 @@ body {
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents repeating the image */
     background-attachment: fixed; /* Keeps the image fixed during scrolling */
-    background-color: rgb(215, 231, 250); /* Fallback color */
+    background-color: rgb(229, 167, 167); /* Fallback color */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +36,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
     body {
-        background-attachment: scroll; /* Changes background attachment for better support on mobile */
+        background-image: url('media/arlebgmobile.png');
     }
 }
 
