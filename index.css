@@ -34,11 +34,6 @@ body {
     min-height: 100vh; /* Ensures minimum height for very short content pages */
     font-family: 'GeshinFont2';
 }
-@media only screen and (max-width: 768px) {
-    body {
-        background-image: url('media/arlebgmobile.png');
-    }
-}
 
 header {
     border-bottom: 1px solid black;
