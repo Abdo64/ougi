@@ -27,6 +27,9 @@
     src: url('fonts/Cairo-Regular.ttf') format('truetype');
 }
 
+html {
+    height: 100%;
+}
 
 body {
     background-image: url('media/arlebg_1096x552.png');
@@ -35,11 +38,10 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: rgb(185, 109, 109);
+    min-height: 100%;
+    font-family: 'GeshinFont2';
     display: flex;
     flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'GeshinFont2';
 }
 
 header {
@@ -96,10 +98,17 @@ header {
 text-decoration: none;
 color: rgb(169, 3, 3);
 }
+.page {
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .content {
     margin-top: 20px;
+    margin-bottom: 20px;
     height: auto;
+    /* min-height: 100vh; */
     width: 80%;
     background-color: rgba(255, 255, 255, 0.48);
     backdrop-filter: blur(10px);
@@ -178,4 +187,56 @@ color: rgb(169, 3, 3);
 }
 .storycont p a {
     color: rgb(169, 3, 3);
+}
+
+footer {
+    margin-top: auto;
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(88, 0, 0);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    
+}
+.footerContent {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    margin-right: auto;
+    
+}
+@media (max-width: 720px){
+    .footerContent {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        position: relative;
+        right: 0;
+    }
+}
+.footerContent img {
+    width: 300px;
+    margin-right: 10%;
+    
+
+}
+@media (max-width: 720px) {
+    
+    .footerContent img {
+        width: 170px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    
+    }   
+}
+.footerContent p {
+    color: white;
+    font-size: 1rem;
 }
