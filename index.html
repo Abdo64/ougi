@@ -12,42 +12,91 @@
 
 <body>
     
-    
-    <div class="page">
-        <header>
-            <div class="header-content">
-                <div class="myaccount"><a href="#">?</a>
-                    <p>soon</p>
-                </div>
-                <div class="myaccount"><a href="https://www.instagram.com/ougi1_1?igsh=MTEzazlvaHpyMnZwaw=="
-                        target="_blank"><img class="tandi" src="media/insta_colored.png" alt=""></a></div>
-                <div class="logoHeader"><a href="index.html">OUGI</a></div>
-                <div class="myaccount"><a href="https://t.me/dok51ja" target="_blank"><img class="tandi"
-                            src="media/tele_colored.png" alt=""></a></div>
-                <div class="myaccount"><a href="https://x.com/Ougi117?t=9xuYQFyOIIlv_6KwXrWBpg&s=09" target="_blank"><img
-                            class="x" src="media/x.png" alt=""></a></div>
+    <header>
+        <div class="header-content">
+            <div class="myaccount"><a href="#">?</a>
+                <p>soon</p>
             </div>
-        </header>
+            <div class="myaccount" ><a href="https://www.instagram.com/ougi1_1?igsh=MTEzazlvaHpyMnZwaw=="
+                    target="_blank"><img id="instadio" class="tandi"  src="media/insta_colored.png" alt=""></a></div>
+            <div id="logoText" class="logoHeader"><a href="index.html">OUGI</a></div>
+            <div class="myaccount" ><a href="https://t.me/dok51ja" target="_blank"><img id="teledio" class="tandi" 
+                        src="media/tele_colored.png" alt=""></a></div>
+            <div class="myaccount" ><a href="https://x.com/Ougi117?t=9xuYQFyOIIlv_6KwXrWBpg&s=09" target="_blank"><img
+                id="x2"    class="x" src="media/x.png" alt=""></a></div>
+        </div>
+    </header>
+    <div class="page">
+        
         <div class="content">
             <div class="storycont">
-                <p>My Genshin <a href="gstory.html">Story</a></p>
+                <p id="diostory">My Genshin <a href="gstory.html">Story</a></p>
             </div>
             <div class="images">
                 <div id="arrow">
-                    <p>click</p><img class="arrow img" src="media/arrow.png" alt="">
+                    <p id="clickDIO" >click</p><img class="arrow img" src="media/arrow.png" alt="">
                 </div>
                 <div><a href="https://t.me/addstickers/Ougis_by_fStikBot"><img class="hanekawa img"
-                            src="media/Ougis_by_fStikBot.png" alt=""></a></div>
+                id="hanekawa"            src="media/Ougis_by_fStikBot.png" alt=""></a></div>
             </div>
         </div>
+<div class="stickersContainer">
+    <img class="sticker" id="sticker1" src="/media/Ougis_by_fStikBot_AgADpRIAAr9iwFI.webp" alt="">
+    <img class="sticker" id="sticker2" src="media/Niyahaha_by_fStikBot_AgADnRQAAqsEAAFQ.webp" alt="">
+    <img class="sticker" id="sticker3" src="media/KISSHOTISMARYAMSWIFE_AgADpVUAApNRkUs.webp" alt="">
+    <p class="itwasmedio" id="changeText">KONO DIO DA</p>
+    <audio id="Dioaudio" src="media/It Was Me, Dio!!!Kono Dio Da - Sound Effect (HD) [ ezmp3.cc ].mp3"></audio>
+</div>
     </div>
     
 
     <footer>
         <div class="footerContent">
-            <img src="media/qrcode_abdo64.github.io.png" alt="">
-            <p>the QR code of the website</p>
+            <img id="qrcode" src="media/qrcode_abdo64.github.io.png" alt="">
+            <p id="qrtext">the QR code of the website</p>
         </div>
+        <script>
+            document.getElementById('changeText').addEventListener('click', function() {
+    document.getElementById('sticker1').src = '/media/avatars-253MmMf9QZzxVBJi-rvlyeg-t1080x1080.jpg';
+    document.getElementById('sticker2').src = '/media/avatars-253MmMf9QZzxVBJi-rvlyeg-t1080x1080.jpg';
+    document.getElementById('sticker3').src = '/media/avatars-253MmMf9QZzxVBJi-rvlyeg-t1080x1080.jpg';
+    document.getElementById('hanekawa').src = '/media/avatars-253MmMf9QZzxVBJi-rvlyeg-t1080x1080.jpg';
+    
+    document.getElementById('changeText').style.display = 'none';
+    setTimeout(function() {
+        document.getElementById('Dioaudio').play();
+    }, 500);
+    setTimeout(function(){
+        document.body.style.backgroundImage = 'url("/media/avatars-253MmMf9QZzxVBJi-rvlyeg-t1080x1080.jpg")';
+        document.querySelectorAll("*, a , img").forEach(function(el) {
+            el.style.color = '#f5a442';
+        });
+
+        document.getElementById('logoText').textContent = 'DIO';
+        document.getElementById('logoText').style.fontSize = '50px';
+document.getElementById('logoText').style.textAlign = 'center';
+document.getElementById('logoText').style.textDecoration = 'none';
+document.getElementById('logoText').style.fontFamily = "'GeshinFont'";
+document.getElementById('qrtext').textContent = ' IT WAS ME DIO';  
+document.querySelector('footer').style.backgroundColor ='black';
+document.querySelector('header').style.backgroundColor ='black';
+document.getElementById('qrcode').src = '/media/avatars-253MmMf9QZzxVBJi-rvlyeg-t1080x1080.jpg';
+document.getElementById('clickDIO').textContent = 'DIO';
+document.getElementById('clickDIO').style.fontSize= '30px';
+document.getElementById('clickDIO').style.color= 'black';
+document.getElementById('diostory').textContent = 'KONO DIO DA';
+document.getElementById('diostory').style.fontSize= '30px';
+document.getElementById('diostory').style.color= 'black';
+document.getElementById('instadio').src = '/media/insta11.png';
+document.getElementById('x2').style.filter = 'brightness(0) saturate(124%) invert(70%) sepia(90%) saturate(320%) hue-rotate(357deg) brightness(1)';
+document.getElementById('teledio').src = '/media/talol.jpg';
+
+
+    }, 300 );
+    
+});
+
+        </script>
     </footer>
 </body>
 

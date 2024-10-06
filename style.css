@@ -51,7 +51,10 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgba(34, 2, 2, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.48);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -78,6 +81,23 @@ header {
     font-family: 'GeshinFont';
 
 }
+#logoText {
+    
+    margin: 0 20px 0 20px;
+
+
+}
+
+#logoText a {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(169, 3, 3);
+    text-decoration: none;
+    font-family: 'GeshinFont';
+
+}
+
+
 
 .myaccount img {
     width: 30px;
@@ -107,7 +127,6 @@ color: rgb(169, 3, 3);
 .content {
     margin-top: 20px;
     margin-bottom: 20px;
-    height: auto;
     /* min-height: 100vh; */
     width: 80%;
     background-color: rgba(255, 255, 255, 0.48);
@@ -122,10 +141,16 @@ color: rgb(169, 3, 3);
     box-shadow:  0px 0px 10px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1080px) {
     .content {
+        margin: 40px 0 0 0 ;
         width: 95%;
         padding: 10px;
+        height: 45vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
     }
 }
 
@@ -172,6 +197,7 @@ color: rgb(169, 3, 3);
         saturate(10000%) hue-rotate(30deg) brightness(0.8);
 }
 
+
 #arrow {
     display: flex;
     flex-flow: column;
@@ -186,7 +212,7 @@ color: rgb(169, 3, 3);
     margin: 20px 0 40px 0;
 }
 .storycont p a {
-    color: rgb(169, 3, 3);
+    color: #a90303;
 }
 
 footer {
@@ -208,7 +234,7 @@ footer {
     margin-right: auto;
     
 }
-@media (max-width: 720px){
+@media (max-width: 1080px){
     .footerContent {
         display: flex;
         flex-flow: column;
@@ -222,12 +248,12 @@ footer {
     }
 }
 .footerContent img {
-    width: 300px;
+    width: 200px;
     margin-right: 10%;
     
 
 }
-@media (max-width: 720px) {
+@media (max-width: 1080px) {
     
     .footerContent img {
         width: 170px;
@@ -241,3 +267,29 @@ footer {
     font-size: 1rem;
 }
 /* check */
+.stickersContainer {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+}
+.sticker {
+    width: calc(100% / 3);
+    height: calc(100%);
+    margin:  20px 10px;
+    border-radius: 30px;
+}
+.itwasmedio {
+    position: absolute;
+    font-size: 50px;
+    color: aliceblue;
+    text-shadow: 
+        -2px -2px 0 black,  
+        2px -2px 0 black,  
+        -2px  2px 0 black,  
+        2px  2px 0 black;
+        background-color: white;
+        margin: 0 10px;
+}
