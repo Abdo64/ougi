@@ -9,6 +9,26 @@
 </head>
 
 <body>
+    <audio id="genshinAudio" loop autoplay>
+        <source src="media/genshin_ost.mp3" type="audio/mpeg">
+        Your browser does not support the audio element
+    </audio>
+    <script>
+        const audioElement = document.getElementById('genshinAudio');
+        audioElement.volume = 0.09;
+        window.addEventListener('click', function() {
+        var audio = document.getElementById('genshinAudio');
+        audio.play().catch(function(error) {
+            console.log('Autoplay was prevented:', error);
+        });
+    });
+    window.addEventListener('scroll', function() {
+        var audio = document.getElementById('genshinAudio');
+        audio.play().catch(function(error) {
+            console.log('Autoplay was prevented:', error);
+        });
+    });
+    </script>
     <div class="page">
         <header>
             <div class="header-content">
