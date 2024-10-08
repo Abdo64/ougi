@@ -167,9 +167,13 @@ color: rgb(169, 3, 3);
     font-weight: 600;
     font-size: 30px;
     margin-bottom: 40px;
+    
 
 }
-
+.arabictr {
+    text-decoration: none;
+    color: #a90303;
+}
 .text p {
     font-size: 26px;
     text-align: center;
@@ -179,6 +183,22 @@ color: rgb(169, 3, 3);
 .text {
     margin-top: 10px;
     padding: 30px;
+}
+.textAr p {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Cairo";
+    font-weight: bold;
+}
+.entr {
+    text-decoration: none;
+    color: #a90303;
+}
+.textAr {
+    margin-top: 10px;
+    padding: 30px;
+    direction: rtl;
 }
 
 .images {
@@ -227,13 +247,16 @@ footer {
     margin-top: auto;
     height: fit-content;
     width: 100%;
+    height: auto;
     background-color: rgb(88, 0, 0);
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: space-evenly;
     
 }
 .footerContent {
+    margin-top: 10px;
+    width: 100%;
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -243,6 +266,7 @@ footer {
 }
 @media (max-width: 1080px){
     .footerContent {
+        width: 100%;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -250,29 +274,91 @@ footer {
         justify-content: center;
         align-items: center;
         margin-right: 0;
+        margin-top: 10px;
         position: relative;
         right: 0;
     }
 }
-.footerContent img {
-    width: 200px;
-    margin-right: 10%;
-    
-
+.pookies {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
-@media (max-width: 1080px) {
-    
-    .footerContent img {
-        width: 170px;
-        margin-right: 0;
-        margin-bottom: 10px;
-    
-    }   
+.card12 {
+    width: 40%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 5px 0;
 }
-.footerContent p {
+.pookies p {    
     color: white;
-    font-size: 1rem;
+    font-size: 2rem;
 }
+.hgm {
+    display: flex;
+    flex-flow: row-reverse;
+    
+    
+    }
+    .rsj {
+    display: flex;
+    flex-flow: row;
+    
+    }
+.card{
+    width: 30%;
+    width: fit-content;
+    margin: 0 5px;
+    align-items: flex-end;
+    justify-content: center ;
+}
+.card a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.card img {
+    width: 100%;
+}
+.card a p {
+    position: absolute;
+    color: #a90303;
+    font-weight: bold;
+    font-family: 'GeshinFont';
+} 
+
+.card {
+    width: 40%;
+}
+@media (max-width : 1080px) {
+        .card {
+            width: 60%;
+            
+            }
+        .card12 {
+            width: 60%;
+            
+            }
+    }
+@media (max-width : 720px) {
+    .card {
+        width: 100%;
+        
+        }
+        
+    .card12 {
+        width: 90%;
+        
+        }
+        
+        
+        
+} 
+
+
+
 /* check */
 .stickersContainer {
     display: flex;
