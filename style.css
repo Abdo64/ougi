@@ -126,7 +126,7 @@ color: rgb(169, 3, 3);
 }
 .content ,  .content-story {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     /* min-height: 100vh; */
     width: 80%;
     background-color: rgba(255, 255, 255, 0.719);
@@ -140,10 +140,9 @@ color: rgb(169, 3, 3);
     border: 2px solid black;
     box-shadow:  0px 0px 10px;
 }
-
 @media (max-width: 1080px) {
     .content {
-        margin: 40px 0 0 0 ;
+        margin: 40px 0 50px 0 ;
         width: 95%;
         padding: 10px;
         height: 45vh;
@@ -153,7 +152,7 @@ color: rgb(169, 3, 3);
 
     }
     .content-story{
-        margin: 40px 0 0 0 ;
+        margin: 40px 0 50px 0 ;
         width: 95%;
         padding: 10px;
         display: flex;
@@ -162,6 +161,9 @@ color: rgb(169, 3, 3);
     }
 }
 
+.con2 {
+    margin-top: 0;
+}
 #arabic {
     font-family: 'Cairo';
     font-weight: 600;
@@ -209,7 +211,7 @@ color: rgb(169, 3, 3);
 }
 
 .img {
-    width: 100px;
+    width: 80px;
 
 }
 
@@ -232,10 +234,14 @@ color: rgb(169, 3, 3);
     align-items: center;
 }
 
+#arrow #myStickersPack{
+position: relative;
+}
 #arrow p {
     position: absolute;
 
 }
+
 .storycont {
     margin: 20px 0 40px 0;
 }
@@ -327,6 +333,7 @@ footer {
     color: #a90303;
     font-weight: bold;
     font-family: 'GeshinFont';
+    font-size: 1.67rem;
 } 
 
 .card {
@@ -405,7 +412,7 @@ footer {
 }
 @media (max-width : 1080px) {
     .itwasmedio {
-        font-size: 30px;
+        font-size: 27px;
     }
     
 }
