@@ -237,10 +237,6 @@ color: rgb(169, 3, 3);
 #arrow #myStickersPack{
 position: relative;
 }
-#arrow p {
-    position: absolute;
-
-}
 
 .storycont {
     margin: 20px 0 40px 0;
